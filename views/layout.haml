@@ -1,0 +1,38 @@
+!!! HTML5
+%html
+  %head
+    %meta(charset="UTF-8")
+    %meta(http-equiv="X-UA-Compatible" content="IE=edge,chrome=1")
+    %title smLNK.rb - smLNK reborn in Ruby, Sinatra, and Redis
+    %meta(name="description" content="smLNK.rb - Link shortening redirector written in ruby based on smLNK (2001)")
+    %meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    %link(rel="shortcut icon" href="/favicon.ico")
+    %link(rel="apple-touch-icon" href="/apple-touch-icon.png")
+    %link(rel="stylesheet" href="/css/smLNK.css")
+    %script(type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js")
+    %script(type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.12/jquery-ui.min.js")
+    :javascript
+      $(document).ready(function() {
+        $('#shorten').submit(function() {
+          $.post(
+            $(this).attr('action'),
+            $(this).serialize(),
+            function(data) {
+              $('#results').html(data);
+            },
+            "text"
+          );
+          return false;
+        });
+      });
+  %body
+    #header
+      %h1 smLNK.rb 
+      %p
+        smLNK is a link shortening service originally written by Jonathon Marshall and William Rockwood in 2001 using PHP and MySQL.
+      %p
+        smLNK.rb was written by Jonathon Marshall in 2011 as a simple CloudFoundry project written in Ruby, Sinatra, JQuery, HAML,
+        and Redis.
+    #content
+      =yield
+    #results

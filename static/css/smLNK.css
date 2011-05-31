@@ -1,0 +1,13 @@
+h1 {margin-bottom:10px;font-size:2em;}
+body {margin:20px auto;width:500px;}
+* {font-family:Georgia;}
+#header p {text-align:justify;}
+#shorten input {margin-bottom:5px;width:516px;font-size:1.5em;border:1px solid black;}
+#shorten input.submit {width:520px;font-size:1.5em;border:1px solid black;}
+#errormsg {margin-bottom:20px;width:500px;background-color:#CC0000;color:white;padding:10px;font-size:1.5em;}
+#shorturl {margin-bottom:20px;width:500px;background-color:#00CC00;color:white;padding:10px;font-size:1.5em;}
+table {border-width:0;border-style:none;border-color:#0000FF;border-collapse:collapse;}
+td {border-width:0;border-style:none;border-color:#0000FF;border-collapse:collapse;padding:0;margin:0;width:10px;height:10px;}
+td.black {background-color:#000;}
+td.white {background-color:#FFF;}
+#qrcode {margin:20px 80px;}
