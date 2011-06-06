@@ -32,8 +32,8 @@ if ! ENV['VCAP_SERVICES'].nil?
 else
   redis_host = "localhost"
   redis_port = "6379"
-  redit_pass = nil
-  redit_name = "smlnk"
+  redis_pass = nil
+  redis_name = "smlnk"
 end
 
 $redis = Redis.new(:host => redis_host, :port => redis_port, :db => redis_name, :password => redis_pass)
