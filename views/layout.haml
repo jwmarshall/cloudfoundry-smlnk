@@ -28,11 +28,16 @@
   %body
     #header
       %h1 smLNK.rb 
-      %p
-        smLNK is a link shortening service originally written by Jonathon Marshall and William Rockwood in 2001 using PHP and MySQL.
-      %p
-        smLNK.rb was written by Jonathon Marshall in 2011 as a simple CloudFoundry project written in Ruby, Sinatra, JQuery, HAML,
-        and Redis.
     #content
       =yield
-    #results
+    #footer
+      %p
+        smLNK.rb is a link shortening redirector written in
+        %a(title="Ruby" href="http://www.ruby-lang.org/en/") Ruby
+        and
+        %a(title="Sinatra" href="http://www.sinatrarb.com/") Sinatra
+        with a
+        %a(title="Redis" href="http://redis.io/") Redis
+        datastore. Get the source on
+        %a(title="cloudfoundry-smlnk" href="https://github.com/jwmarshall/cloudfoundry-smlnk") GitHub!
+
