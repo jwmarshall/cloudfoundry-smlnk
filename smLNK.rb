@@ -10,7 +10,7 @@
 #
 #  smLNK.rb by Jonathon Marshall
 #  based of the original smLNK by Jonathon Marshall and William Rockwood (2001)
-#
+#  useless comments by Tim Burden
 #
 
 require 'rubygems'
